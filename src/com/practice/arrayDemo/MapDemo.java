@@ -7,7 +7,7 @@ public class MapDemo {
 
 	public static void main(String[] args) {
 		
-		Map<Integer, String> map1 = new TreeMap<>();
+		Map<Integer, String> map1 = new HashMap<>();
 		
 		
 		
@@ -31,6 +31,7 @@ public class MapDemo {
 		
 		}
 		
+		map1.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder())).forEach(System.out::println);
 		
 		
 		

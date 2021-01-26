@@ -10,7 +10,14 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class first {
+public class first implements Runnable{
+	int j=100;
+	
+	@Override
+	public void run() {
+		System.out.println("runnnn");
+		
+	}
 
 	public static void main(String[] args) {
 		
@@ -49,10 +56,20 @@ public class first {
 		s.add("haha");
 		s.add("zaha ");
 		s.add("haha");
-		System.out.println();
 		System.out.println(s);
-				s.forEach(System.out :: println);
-				
-				
+
+		String[] i = {};
+		System.out.println(i.getClass().getName());
+		first f = new first();
+		f.change();
+		
+		System.out.println(f.j);
+		//Thread.sleep(1000);
 	}
+	
+	public void change() {
+		j=j+100;
+		System.out.println(j);
+	}
+	
 }
