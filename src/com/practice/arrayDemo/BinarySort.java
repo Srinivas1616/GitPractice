@@ -13,7 +13,7 @@ public class BinarySort {
 		boolean check = true;
 		int iteration = 0;
 		for (int i = 0; i < size; i++) {
-			check=true;
+			//check=true;
 			iteration++;
 			for (int j = 0; j < (size - 1 - i); j++) {
 

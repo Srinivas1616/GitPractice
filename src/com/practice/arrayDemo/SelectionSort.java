@@ -6,7 +6,7 @@ public class SelectionSort {
 
 	public static void main(String[] args) {
 		
-		int[] a = {10,-2,4,9,1,5,0,2,6};
+		int[] a = {3,-2,4,9,1,5,0,2,6};
 		int n = a.length;
 		
 		for(int i=0; i<n-1;i++) {

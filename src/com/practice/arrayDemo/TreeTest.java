@@ -9,7 +9,7 @@ public class TreeTest {
 		
 		Comparator<Person> nameComp = (x,y) -> x.getName().compareTo(y.getName());
 		Comparator<Person> ageComp = (x,y) -> x.getAge()- y.getAge();
-		Set<Person> set = new TreeSet<>(nameComp);
+		Set<Person> set = new TreeSet<>(ageComp);
 		
 		set.add(new Person("rajiv", 10));
 		set.add(new Person("sandy", 34));
@@ -20,7 +20,10 @@ public class TreeTest {
 		set.add(new Person("bharati", 20));
 		set.add(new Person("ravi", 40));
 				
+		Person str[]=set.toArray(new Person[set.size()]);
 		
+		//for(Person p:str)
+		//System.out.println(p.getName());
 		System.out.println(set.size());
 		System.out.println(set);
 	
