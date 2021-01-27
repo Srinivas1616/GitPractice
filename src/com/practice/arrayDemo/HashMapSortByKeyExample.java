@@ -30,6 +30,8 @@ public class HashMapSortByKeyExample {
        Map.Entry pair = (Map.Entry)iterator2.next();
        System.out.print(pair.getKey() + ": ");
        System.out.println(pair.getValue());
-   } 
+   }
+   
+   
  }
 }
